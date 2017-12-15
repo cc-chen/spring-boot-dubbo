@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.dubbo</groupId>
+    <artifactId>spring-boot-dubbo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>spring-boot-dubbo-consumer</artifactId>
+  
+  	<properties>
+		<jetty_version>9.2.10.v20150310</jetty_version>
+	</properties>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>com.dubbo</groupId>
+    	<artifactId>spring-boot-dubbo-api</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	
+    <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>  
+	
+	<dependency>
+		<groupId>com.alibaba</groupId>
+		<artifactId>spring-boot-starter-dubbo</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</dependency>  
+		
+  </dependencies>
+  
+  <!-- <build>
+		<finalName>apiServer</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>unpack</id>
+						<phase>package</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>com.alibaba</groupId>
+									<artifactId>dubbo</artifactId>
+									<version>${dubbo_version}</version>
+									<outputDirectory>${project.build.directory}/dubbo</outputDirectory>
+									<includes>META-INF/assembly/**</includes>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptor>src/main/assembly/assembly.xml</descriptor>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build> -->
+  
+</project>
