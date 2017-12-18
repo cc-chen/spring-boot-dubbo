@@ -4,13 +4,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.alibaba.boot.dubbo.annotation.DubboConsumer;
 import com.dubbo.api.DubboService;
+import com.reger.dubbo.annotation.Inject;
 
 @RestController
 public class IndexController {
 
-	@DubboConsumer
+	@Inject
 	private DubboService dubboService;
 	
 	@RequestMapping("/add/{a}/{b}")
