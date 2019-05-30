@@ -21,7 +21,7 @@
 		<org.codehaus.jackson_jackson-mapper-asl_version>1.9.13</org.codehaus.jackson_jackson-mapper-asl_version>
 		<javax.servlet_jstl_version>1.2</javax.servlet_jstl_version>
 		<redis.clients_redis_version>2.9.0</redis.clients_redis_version>
-		<zookeeper_version>3.4.6</zookeeper_version>
+		<zookeeper_version>3.4.14</zookeeper_version>
 		<zkclient_version>0.1</zkclient_version>
 	</properties>
 
